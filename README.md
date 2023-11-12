@@ -7,7 +7,7 @@ The underlying model was trained on the MNIST dataset with 13 epochs. Training w
 - Training Accuracy: 99.86875
 - Test Accuracy: 99.5
 
-The Dockerfile is located within the 'app' folder. I hope you won't encounter any difficulties.
+The scripts related to neural networks are located within the app/digits/neural directory.
 
 ## Running with Docker
 
