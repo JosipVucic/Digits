@@ -34,7 +34,7 @@ class CustomUserCreationForm(UserCreationForm):
         model = User
         fields = ("email", "password1", "password2")
 
-    def email_clean(self):
+    def clean_email(self):
         """Checks to see if the email already exists in the database"""
         email = self.cleaned_data['email'].lower()
         new = User.objects.filter(email=email)
