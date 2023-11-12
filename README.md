@@ -1,6 +1,7 @@
 # Digits
 
 This web app is designed for classifying images of digits. Submit an image containing a single digit, and the app will identify and tell you which digit is present.
+Works best with zoomed in images of handwritten digits, dark ink on light background.
 
 The underlying model was trained on the MNIST dataset with 13 epochs. Training was stopped after the maximum accuracy did not improve for 5 consecutive epochs. The training was performed on Google Colab.
 
