@@ -8,12 +8,11 @@
     {% if digit_is_valid %}
         <p class="digit">{{digit}}</p>
         <h3 class="digit_message">Does this Digit Match Your Image?</h3>
-    {% else %}
+    {% endif %}
         <form method="post" enctype="multipart/form-data">
             {% csrf_token %}   {{ form.as_p }}
         <button type="submit">Upload</button>
         </form>
-    {% endif %}
 {% else %}
     <p>Please log in to use the app.</p>
 {% endif %}
