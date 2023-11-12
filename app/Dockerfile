@@ -30,7 +30,8 @@ RUN apt-get install libglib2.0-0 -y
 # Copy the source code into the container.
 COPY . .
 
-#RUN python manage.py collectstatic --noinput
+# Using sqlite so this should be fine.
+RUN python manage.py migrate
 
 # Expose the port that the application listens on.
 EXPOSE 8000
