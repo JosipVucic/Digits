@@ -1,0 +1,14 @@
+<!-- templates/home.html -->
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+    <h2>User information</h2>
+    <p><span class="emphasized_text">email:</span> {{user.email}}</p>
+    <p><a href="{% url 'password_reset' %}">Reset Password</a></p>
+{% else %}
+    <p>You are not logged in</p>
+{% endif %}
+{% endblock %}

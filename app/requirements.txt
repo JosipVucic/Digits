@@ -1,0 +1,10 @@
+Django~=5.0b1
+torch~=2.1.0
+torchvision~=0.16.0
+tqdm~=4.66.1
+numpy~=1.26.1
+opencv-python~=4.8.1.78
+Pillow~=10.1.0
+scipy~=1.11.3
+six~=1.16.0
+gunicorn~=21.2
