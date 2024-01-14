@@ -22,10 +22,16 @@ docker run -d --name digits-container -p 8000:8000 digits
 The app should now be running, and you can access it at http://localhost:8000 in your web browser.
 
 ## Running with Django
-To run the app using Django, navigate to the 'app' folder (the folder containing manage.py) and execute the following command:
+To run the app using Django, navigate to the 'app' folder (the folder containing manage.py) and execute the following:
 
-```bash
-python manage.py runserver
-```
+1. Migrate the database:
+   ```bash
+   python manage.py migrate
+   ```
+
+2. Run the development server:
+   ```bash
+   python manage.py runserver
+   ```
 
 Make sure you have all the required dependencies listed in requirements.txt, otherwise, the app may not work properly.
